@@ -1,0 +1,42 @@
+@objects
+    header  id  header
+    footer  id  footer
+    logo    id  logo
+    meni    id  meni
+    naziv   id  naziv
+    search  css input[type="submit"]
+    name    css input[name="query"]
+    godina  id  godina 
+    imena   id  imena
+    cetvrtina   css .cetvrtina
+    polovina    css .polovina
+    prva    id  prva
+    druga   id  druga
+= Header section =
+    header:
+        inside screen ~ 0 px top
+    naziv:
+        inside header ~ 20 px top right
+    logo, meni, naziv:
+        inside header
+    logo:
+        inside header ~ 10 px top left
+= Main section =
+    search, name:
+        inside druga
+        above imena
+    godina:
+        inside cetvrtina
+    cetvrtina:
+        width 25 % of screen/width 
+    polovina:
+        width 50 % of screen/width 
+    prva:
+        inside screen ~ 0 px left
+    druga:
+        right-of prva ~ 0 px
+    polovina:
+        inside screen ~ 0 px right
+= Footer section =
+    footer:
+        inside screen ~ 0 px bottom

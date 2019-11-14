@@ -1,0 +1,17 @@
+{
+  "tests" : [ {
+    "name" : "600pxaddZadatak.gspec",
+    "startedAt" : 1541469445525,
+    "endedAt" : 1541469454463,
+    "failed" : false,
+    "statistic" : {
+      "passed" : 10,
+      "errors" : 0,
+      "warnings" : 0,
+      "total" : 10
+    },
+    "testId" : "1-600pxaddzadatak.gspec",
+    "duration" : 8938,
+    "failed" : false
+  } ]
+}

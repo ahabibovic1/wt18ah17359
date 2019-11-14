@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Spirala 1, Zadatak 7</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="addStudent.css" />
+</head>
+<body>
+    <div id="header" class="light">
+        <img id="logo" src="http://www.iconarchive.com/download/i90104/icons8/windows-8/Business-Graduation-Cap.ico" alt="Slika nedostupna">
+        <ul id="meni">
+            <li><a href="studenti.html">Pregled studenata</a></li>
+            <li><a href="zadaci.html">Pregled godina</a></li>
+            <li><a href="commiti.html">Pregled commita</a></li>
+            <li><a href="addZadatak.html">Dodavanje zadatka</a></li>
+            <li><a href="addVjezba.html">Dodavanje vježbe</a></li>
+            <li><a href="addStudent.html">Dodavanje studenta</a></li>
+            <li><a href="addGodina.html">Dodavanje godine</a></li> 
+            <li id="login_meni"><a href="login.html">Logout</a></li>
+        </ul>
+        <h1 id="naziv">Dodavanje studenta</h1>
+    </div>
+    <div id="divPoruke" style = "color:orangered"></div>
+    <div id="glavniSadrzaj">
+        <form name="fPojedinacni" action="#">
+            <h3>Pojedinačni unos</h3>
+            <label>Godina</label>
+            <select name="sGodina">
+            </select>
+            <label>Ime i prezime</label>
+            <input type="text" name="key" required>
+            <label>Index</label>
+            <input type="number" name="secret" required>
+            <input type="button" value="Učitaj">
+            <input type="button" value="Dodaj" disabled>
+        </form>
+    </div>
+    <div id="footer" class="light">
+        <p>Web tehnologije 2018/2019</p>
+    </div>
+    <script src="validacija.js"></script>
+    <script src="addStudent.js"></script>
+</body>
+</html>

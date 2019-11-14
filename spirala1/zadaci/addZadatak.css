@@ -1,0 +1,89 @@
+*{
+    font-family: 'Segoe UI';
+    color: #17252a;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.light *{
+    color: #def2f1;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+/*HEADER FOOTER*/
+#header, #footer {
+    background-color: #3aafa9;
+    padding: 10px;
+}
+/*MENI*/
+#logo {
+    width: 4em; /*4 puta font*/
+    height: 4em;
+}
+#meni {
+    list-style-type: none;
+}
+#meni li{
+    display: inline;
+}
+#meni a {
+    padding: 5px 10px;
+    text-decoration: none;
+}
+#meni a:hover {
+    background-color:#2b7a78;
+}
+/*GLAVNI SADRZAJ*/
+#glavniSadrzaj {
+    width: 85%;
+    height: 100%;
+    margin: auto;
+    padding: 10px;
+    background-color: #def2f1;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+}
+#noviZadatak {
+    background-color: #feffff;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+#noviZadatak h3{
+    padding: 10px;
+    text-align: center;
+}
+label {
+    padding: 10px;
+}
+input[name="naziv"], input[name="postavka"], input[name="dodaj"] {
+    margin: 10px;
+}
+input[name="dodaj"] {
+    width: fit-content;
+    padding: 0 5%;
+    align-self: flex-end;
+}
+select {
+    margin: 10px;
+}
+/*MEDIA QUERIES*/
+@media (min-width: 600px) { /*preko 600px*/
+    #naziv {
+        position: absolute;
+        top: 0.67em;
+        right: 0.67em;
+        float: right;
+    }
+}
+@media (max-width: 600px) {
+    #glavniSadrzaj {
+        width: 100%;
+    }
+}

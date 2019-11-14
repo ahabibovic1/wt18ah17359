@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Spirala 1, Zadatak 4</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="commiti.css" />
+</head>
+<body>
+    <div id="header" class="light">
+        <img id="logo" src="http://www.iconarchive.com/download/i90104/icons8/windows-8/Business-Graduation-Cap.ico" alt="Slika nedostupna">
+        <ul id="meni">
+            <li><a href="studenti.html">Pregled studenata</a></li>
+            <li><a href="zadaci.html">Pregled godina</a></li>
+            <li><a href="commiti.html">Pregled commita</a></li>
+            <li><a href="addZadatak.html">Dodavanje zadatka</a></li>
+            <li><a href="addVjezba.html">Dodavanje vježbe</a></li>
+            <li><a href="addStudent.html">Dodavanje studenta</a></li>
+            <li><a href="addGodina.html">Dodavanje godine</a></li> 
+            <li id="login_meni"><a href="login.html">Logout</a></li>
+        </ul>
+        <h1 id="naziv">Pregled commita</h1>
+    </div>
+    <div id="divPoruke" style="color:orangered"></div>
+   <div id="omotac">
+        <div id="divFormi">
+            <form id="kreirajForma">
+                    <h4>Kreiraj novu tabelu</h4>
+                    <label>Unesite broj zadataka: </label>
+                    <input type="number" id="brojZadataka"> <br>
+                    <input type="submit" value="Kreiraj" onclick="klikTabela(); return false;">
+                </form>
+                <form id="dodajForma">
+                    <h4>Dodaj commit</h4>
+                    <label>Unesite redni broj zadatka: </label> 
+                    <input type="number" name="rb"> <br>
+                    <label>Unesite url: </label> 
+                    <input type="url" name="urlCommita"> <br>
+                    <input type="submit" value="Dodaj" onclick="klikDodajCommit(); return false;">
+                </form>
+                <form id="editujForma">
+                    <h4>Edituj commit</h4> 
+                    <label>Unesite redni broj zadatka: </label> 
+                    <input type="number" name="rb">  <br>
+                    <label>Unesite redni broj commita: </label> 
+                    <input type="number" name="rb"> <br>
+                    <label>Unesite url: </label> 
+                    <input type="url" name="urlCommita"> <br>
+                    <input type="submit" value="Edituj" onclick="klikEditujCommit(); return false;">
+                </form>
+                <form id="obrisiForma">
+                    <h4>Obriši commit</h4>
+                    <label>Unesite redni broj zadatka: </label> 
+                    <input type="number" name="rb"> <br>
+                    <label>Unesite redni broj commita: </label>
+                    <input type="number" name="rb"> <br>
+                    <input type="submit" value="Obriši" onclick="klikObrisi(); return false;">
+                </form>
+            </div>
+        <div id="glavni"></div>
+   </div>
+    <div id="footer" class="light">
+         <p>Web tehnologije 2018/2019</p>
+    </div>  
+    <script src="commiti.js"></script>
+    <script src="committabela.js"></script>
+</body>
+</html>

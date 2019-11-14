@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Spirala 1, Zadatak 6</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="addVjezba.css" />
+</head>
+<body>
+    <div id="header" class="light">
+        <img id="logo" src="http://www.iconarchive.com/download/i90104/icons8/windows-8/Business-Graduation-Cap.ico" alt="Slika nedostupna">
+        <ul id="meni">
+            <li><a href="studenti.html">Pregled studenata</a></li>
+            <li><a href="zadaci.html">Pregled godina</a></li>
+            <li><a href="commiti.html">Pregled commita</a></li>
+            <li><a href="addZadatak.html">Dodavanje zadatka</a></li>
+            <li><a href="addVjezba.html">Dodavanje vježbe</a></li>
+            <li><a href="addStudent.html">Dodavanje studenta</a></li>
+            <li><a href="addGodina.html">Dodavanje godine</a></li> 
+            <li id="login_meni"><a href="login.html">Logout</a></li>
+        </ul>
+        <h1 id="naziv">Dodavanje vježbe/spirale</h1>
+    </div>
+    <div id="divPoruke" style = "color:orangered"></div>
+    <div id="glavniSadrzaj">
+        <form name="fPostojeca">
+            <h3>Dodavanje postojeće vježbe/spirale</h3>
+            <label>Godina</label>
+            <select name="sGodine">
+                <option>2014/2015</option>
+                <option>2015/2016</option>
+                <option>2016/2017</option>
+                <option>2017/2018</option>
+                <option>2018/2019</option>
+            </select>
+            <label>Vježbe/Spirale</label>
+            <select name=sVjezbe>
+                <option value="Vježba 1">Vježba 1</option>
+                <option value="Vježba 2">Vježba 2</option>
+                <option value="Vježba 3">Vježba 3</option>
+                <option value="Vježba 4">Vježba 4</option>
+                <option value="Vježba 4">Vježba 5</option>
+                <option value="Vježba 4">Vježba 6</option>
+                <option value="Spirala 1">Spirala 1</option>
+                <option value="Spirala 2">Spirala 2</option>
+                <option value="Spirala 3">Spirala 3</option>
+                <option value="Spirala 4">Spirala 4</option>
+            </select>
+            <input type="submit" name="submit" value="Dodaj">
+        </form>
+        <form name="fNova">
+            <h3>Nova vježba/spirala</h3>
+            <label>Naziv vježbe</label>
+            <input type="text" name="naziv" required>
+            <label>Godina</label>
+            <select name="sGodine">
+                <option>2014/2015</option>
+                <option>2015/2016</option>
+                <option>2016/2017</option>
+                <option>2017/2018</option>
+                <option>2018/2019</option>
+            </select>   
+            <ul>
+                <li>Zadatak 1</li>
+                <li>Zadatak 2</li>
+                <li>Zadatak 3</li>
+            </ul>
+            <div class="red">
+                <select name=sZadatak>
+                    <option value="Vježba 1">Vježba 1</option>
+                    <option value="Vježba 2">Vježba 2</option>
+                    <option value="Vježba 3">Vježba 3</option>
+                    <option value="Vježba 4">Vježba 4</option>
+                    <option value="Vježba 4">Vježba 5</option>
+                    <option value="Vježba 4">Vježba 6</option>
+                    <option value="Spirala 1">Spirala 1</option>
+                    <option value="Spirala 2">Spirala 2</option>
+                    <option value="Spirala 3">Spirala 3</option>
+                    <option value="Spirala 4">Spirala 4</option>
+                </select>
+                <input type="button" name="dZadatak" value="Dodaj zadatak">
+            </div>
+            <label><input type="checkbox" name="spirala" value="value">Spirala</label>
+            <input type="submit" name="submit" value="Dodaj" onclick="klik(); return false;">
+        </form>
+    </div>
+    <div id="footer" class="light">
+        <p>Web tehnologije 2018/2019</p>
+    </div>
+    <script src="validacija.js"></script>
+    <script src="addVjezba.js"></script>
+</body>
+</html>

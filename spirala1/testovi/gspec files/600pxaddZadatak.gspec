@@ -1,0 +1,27 @@
+@objects
+    header  id  header
+    footer  id  footer
+    logo    id  logo
+    meni    id  meni
+    naziv   id  naziv
+    side    id  side
+    glavniSadrzaj   id  glavniSadrzaj
+    noviZadatak id  noviZadatak
+= Header section =
+    header:
+        inside screen ~ 0 px top
+    logo, meni, naziv:
+        inside header
+    naziv:
+        below meni ~ 0 pxž
+    logo:
+        inside header ~ 10 px top left
+= Main section =
+    glavniSadrzaj:
+        centered horizontally inside screen
+        width 100 % of screen/width
+    noviZadatak:
+        inside glavniSadrzaj
+= Footer section =
+    footer:
+        inside screen ~ 0 px bottom

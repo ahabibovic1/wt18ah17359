@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Spirala 1, Zadatak 6</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="addVjezba.css" />
+</head>
+<body>
+    <div id="header" class="light">
+        <img id="logo" src="http://www.iconarchive.com/download/i90104/icons8/windows-8/Business-Graduation-Cap.ico" alt="Slika nedostupna">
+        <ul id="meni">
+            <li><a href="studenti.html">Pregled studenata</a></li>
+            <li><a href="zadaci.html">Pregled godina</a></li>
+            <li><a href="commiti.html">Pregled commita</a></li>
+            <li><a href="addZadatak.html">Dodavanje zadatka</a></li>
+            <li><a href="addVjezba.html">Dodavanje vježbe</a></li>
+            <li><a href="addStudent.html">Dodavanje studenta</a></li>
+            <li><a href="addGodina.html">Dodavanje godine</a></li> 
+            <li id="login_meni"><a href="login.html">Logout</a></li>
+        </ul>
+        <h1 id="naziv">Dodavanje vježbe/spirale</h1>
+    </div>
+    <div id="divPoruke" style = "color:orangered"></div>
+    <div id="glavniSadrzaj" >
+        <form name="fPostojeca" action="http://localhost:8080/addVjezba" method="POST">
+            <h3>Dodavanje postojeće vježbe/spirale</h3>
+            <label>Godina</label>
+            <select name="sGodine" required>
+                <option disabled selected value> -- Odaberite godinu -- </option>
+            </select>
+            <label>Vježbe/Spirale</label>
+            <select name=sVjezbe required>
+                <option disabled selected value> -- Odaberite vjezbu -- </option>
+            </select>
+            <input type="submit" name="submit" value="Dodaj">
+        </form>
+        <form name="fNova" action="http://localhost:8080/addVjezba" method="POST" onsubmit="return klik()">
+            <h3>Nova vježba/spirala</h3>
+            <label>Naziv vježbe</label>
+            <input type="text" name="naziv" required>
+            <label>Godina</label>
+            <select name="sGodine" required>
+                <option disabled selected value> -- Odaberite godinu -- </option>
+            </select>
+            <label></label><input type="checkbox" name="spirala">Spirala</label>
+            <input type="submit" name="submit" value="Dodaj" onsubmit="klik();">
+        </form>
+        <form name='fPoveziZadatak' action="http://localhost:8080/vjezba/" method="POST" onsubmit="return klik2()">
+            <h3>Dodavanje postojećeg zadataka</h3>
+            <select name='sVjezbe' required onchange = 'pozoviAjax()'>
+                <option disabled selected value> -- Odaberite vjezbu -- </option>
+            </select>
+            <select name='sZadatak' required>
+                <option disabled selected value> -- Odaberite zadatak -- </option>
+            </select>
+            <input name='dZadatak' type='submit' value='Dodaj' onsubmit="klik2();">
+        </form>
+    </div>
+    <div id="footer" class="light">
+        <p>Web tehnologije 2018/2019</p>
+    </div>
+    <script src="validacija.js"></script>
+    <script src="addVjezba.js"></script>
+    <script src="prikaziGodine.js"></script>
+    <script src="prikaziVjezbe.js"></script>
+    <script src="prikaziZadatke.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "tests" : [ {
+    "name" : "600pxcommiti.gspec",
+    "startedAt" : 1541469364996,
+    "endedAt" : 1541469374304,
+    "failed" : false,
+    "statistic" : {
+      "passed" : 8,
+      "errors" : 0,
+      "warnings" : 0,
+      "total" : 8
+    },
+    "testId" : "1-600pxcommiti.gspec",
+    "duration" : 9308,
+    "failed" : false
+  } ]
+}

@@ -1,0 +1,295 @@
+{
+  "testId" : "1-addvjezba.gspec",
+  "name" : "addVjezba.gspec",
+  "report" : {
+    "nodes" : [ {
+      "name" : "Simple check",
+      "status" : "info",
+      "nodes" : [ {
+        "name" : "check  addVjezba.gspec --url http://localhost/addVjezba.html --size 1024x768 --htmlreport Z6_izvjestaj",
+        "status" : "info",
+        "nodes" : [ {
+          "name" : "Check layout: addVjezba.gspec included tags: ",
+          "status" : "info",
+          "time" : 1541468830857,
+          "sections" : [ {
+            "name" : "Header section",
+            "place" : {
+              "filePath" : "addVjezba.gspec",
+              "lineNumber" : 10
+            },
+            "objects" : [ {
+              "name" : "header",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "addVjezba.gspec",
+                  "lineNumber" : 12
+                },
+                "name" : "inside screen ~ 0 px top",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "header",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "screen",
+                    "edge" : "top"
+                  },
+                  "expectedDistance" : "-2 to 2px",
+                  "realDistance" : "0px"
+                } ],
+                "highlight" : [ "header", "screen" ]
+              } ]
+            }, {
+              "name" : "naziv",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "addVjezba.gspec",
+                  "lineNumber" : 14
+                },
+                "name" : "inside header ~ 20 px top right",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "naziv",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "header",
+                    "edge" : "top"
+                  },
+                  "expectedDistance" : "18 to 22px",
+                  "realDistance" : "21px"
+                }, {
+                  "from" : {
+                    "object" : "naziv",
+                    "edge" : "right"
+                  },
+                  "to" : {
+                    "object" : "header",
+                    "edge" : "right"
+                  },
+                  "expectedDistance" : "18 to 22px",
+                  "realDistance" : "22px"
+                } ],
+                "highlight" : [ "naziv", "header" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "addVjezba.gspec",
+                  "lineNumber" : 16
+                },
+                "name" : "inside header",
+                "meta" : [ ],
+                "highlight" : [ "naziv", "header" ]
+              } ]
+            }, {
+              "name" : "logo",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "addVjezba.gspec",
+                  "lineNumber" : 16
+                },
+                "name" : "inside header",
+                "meta" : [ ],
+                "highlight" : [ "logo", "header" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "addVjezba.gspec",
+                  "lineNumber" : 18
+                },
+                "name" : "inside header ~ 10 px top left",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "logo",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "header",
+                    "edge" : "top"
+                  },
+                  "expectedDistance" : "8 to 12px",
+                  "realDistance" : "10px"
+                }, {
+                  "from" : {
+                    "object" : "logo",
+                    "edge" : "left"
+                  },
+                  "to" : {
+                    "object" : "header",
+                    "edge" : "left"
+                  },
+                  "expectedDistance" : "8 to 12px",
+                  "realDistance" : "10px"
+                } ],
+                "highlight" : [ "logo", "header" ]
+              } ]
+            }, {
+              "name" : "meni",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "addVjezba.gspec",
+                  "lineNumber" : 16
+                },
+                "name" : "inside header",
+                "meta" : [ ],
+                "highlight" : [ "meni", "header" ]
+              } ]
+            } ]
+          }, {
+            "name" : "Main section",
+            "place" : {
+              "filePath" : "addVjezba.gspec",
+              "lineNumber" : 19
+            },
+            "objects" : [ {
+              "name" : "glavniSadrzaj",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "addVjezba.gspec",
+                  "lineNumber" : 21
+                },
+                "name" : "centered horizontally inside screen",
+                "highlight" : [ "glavniSadrzaj", "screen" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "addVjezba.gspec",
+                  "lineNumber" : 22
+                },
+                "name" : "width 85 % of screen/width",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "glavniSadrzaj",
+                    "edge" : "left"
+                  },
+                  "to" : {
+                    "object" : "glavniSadrzaj",
+                    "edge" : "right"
+                  },
+                  "expectedDistance" : "85% [844px]",
+                  "realDistance" : "85% [846px]"
+                } ],
+                "highlight" : [ "glavniSadrzaj" ]
+              } ]
+            }, {
+              "name" : "fPostojeca",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "addVjezba.gspec",
+                  "lineNumber" : 24
+                },
+                "name" : "inside glavniSadrzaj",
+                "meta" : [ ],
+                "highlight" : [ "fPostojeca", "glavniSadrzaj" ]
+              } ]
+            }, {
+              "name" : "fNova",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "addVjezba.gspec",
+                  "lineNumber" : 26
+                },
+                "name" : "inside glavniSadrzaj",
+                "meta" : [ ],
+                "highlight" : [ "fNova", "glavniSadrzaj" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "addVjezba.gspec",
+                  "lineNumber" : 27
+                },
+                "name" : "below fPostojeca",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "fNova",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "fPostojeca",
+                    "edge" : "bottom"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "20px"
+                } ],
+                "highlight" : [ "fNova", "fPostojeca" ]
+              } ]
+            } ]
+          }, {
+            "name" : "Footer section",
+            "place" : {
+              "filePath" : "addVjezba.gspec",
+              "lineNumber" : 28
+            },
+            "objects" : [ {
+              "name" : "footer",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "addVjezba.gspec",
+                  "lineNumber" : 30
+                },
+                "name" : "inside screen ~ 0 px bottom",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "footer",
+                    "edge" : "bottom"
+                  },
+                  "to" : {
+                    "object" : "screen",
+                    "edge" : "bottom"
+                  },
+                  "expectedDistance" : "-2 to 2px",
+                  "realDistance" : "1px"
+                } ],
+                "highlight" : [ "footer", "screen" ]
+              } ]
+            } ]
+          } ],
+          "objects" : {
+            "meni" : {
+              "area" : [ 10, 78, 974, 43 ]
+            },
+            "fNova" : {
+              "area" : [ 297, 443, 400, 484 ]
+            },
+            "glavniSadrzaj" : {
+              "area" : [ 74, 131, 846, 816 ]
+            },
+            "footer" : {
+              "area" : [ 0, 946, 994, 42 ]
+            },
+            "fPostojeca" : {
+              "area" : [ 297, 151, 400, 272 ]
+            },
+            "naziv" : {
+              "area" : [ 594, 21, 378, 42 ]
+            },
+            "header" : {
+              "area" : [ 0, 0, 994, 131 ]
+            },
+            "screen" : {
+              "area" : [ 0, 0, 994, 989 ]
+            },
+            "logo" : {
+              "area" : [ 10, 10, 64, 64 ]
+            }
+          },
+          "screenshot" : "layout-1-screenshot.png",
+          "type" : "layout"
+        } ],
+        "time" : 1541468829465,
+        "type" : "node"
+      } ],
+      "time" : 1541468824122,
+      "type" : "node"
+    } ]
+  }
+}

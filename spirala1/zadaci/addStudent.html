@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Spirala 1, Zadatak 7</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="addStudent.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <div id="header" class="light">
+        <img id="logo" src="http://www.iconarchive.com/download/i90104/icons8/windows-8/Business-Graduation-Cap.ico" alt="Slika nedostupna">
+        <ul id="meni">
+            <li><a href="studenti.html">Pregled studenata</a></li>
+            <li><a href="zadaci.html">Pregled godina</a></li>
+            <li><a href="commiti.html">Pregled commita</a></li>
+            <li><a href="addZadatak.html">Dodavanje zadatka</a></li>
+            <li><a href="addVjezba.html">Dodavanje vježbe</a></li>
+            <li><a href="addStudent.html">Dodavanje studenta</a></li>
+            <li><a href="addGodina.html">Dodavanje godine</a></li> 
+            <li id="login_meni"><a href="login.html">Logout</a></li>
+        </ul>
+        <h1 id="naziv">Dodavanje studenta</h1>
+    </div>
+    <div id="glavniSadrzaj">
+        <form name="fPojedinacni">
+            <h3>Pojedinačni unos</h3>
+            <label>Godina</label>
+            <select name="godina">
+                <option>2014/2015</option>
+                <option>2015/2016</option>
+                <option>2016/2017</option>
+                <option>2017/2018</option>
+                <option>2018/2019</option>
+            </select>
+            <label>Ime i prezime</label>
+            <input type="text" name="ime" required>
+            <label>Index</label>
+            <input type="number" name="index" required>
+            <label>Email</label>
+            <input type="email" name="email" required>
+            <input type="submit" name="submit" value="Unesi">
+        </form>
+        <form name="fMasovni">
+            <h3>Masovni unos</h3>
+            <label>Godina</label>
+            <select name="godina">
+                <option>2014/2015</option>
+                <option>2015/2016</option>
+                <option>2016/2017</option>
+                <option>2017/2018</option>
+                <option>2018/2019</option>
+            </select>
+            <label>CSV fajl</label>
+            <input type="file" name="csv lista">
+            <input type="submit" name="submit" value="Unesi">
+        </form>
+    </div>
+    <div id="footer" class="light">
+        <p>Web tehnologije 2018/2019</p>
+    </div>
+</body>
+</html>

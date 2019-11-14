@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Spirala 1, Zadatak 3</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="zadaci.css" />
+</head>
+<body>
+    <div id="header" class="light">
+        <img id="logo" src="http://www.iconarchive.com/download/i90104/icons8/windows-8/Business-Graduation-Cap.ico" alt="Slika nedostupna">
+        <ul id="meni">
+            <li><a href="studenti.html">Pregled studenata</a></li>
+            <li><a href="zadaci.html">Pregled godina</a></li>
+            <li><a href="commiti.html">Pregled commita</a></li>
+            <li><a href="addZadatak.html">Dodavanje zadatka</a></li>
+            <li><a href="addVjezba.html">Dodavanje vježbe</a></li>
+            <li><a href="addStudent.html">Dodavanje studenta</a></li>
+            <li><a href="addGodina.html">Dodavanje godine</a></li> 
+            <li id="login_meni"><a href="login.html">Logout</a></li>
+        </ul>
+        <h1 id="naziv">Odabir vježbe</h1>
+    </div>
+    <div id="divPoruke" style = "color:orangered"></div>
+    <div id="glavni">
+        <div class="cetvrtina" id="prva">
+            <h3>Godina</h3>
+            <ul id="godina">
+                <li><a href=#>Godina 2014/2015</a></li>
+                <li><a href=#>Godina 2015/2016</a></li>
+                <li><a href=#>Godina 2016/2017</a></li>
+                <li><a href=#>Godina 2017/2018</a></li>
+                <li><a href=#>Godina 2018/2019</a></li>
+            </ul>
+        </div>
+        <div class="cetvrtina" id="druga">
+            <h3>Student</h3>
+            <form action="#">
+                <input type="text" name="query">
+                <input type="submit" name="search_dugme" value="Search" onclick="klik(); return false;">
+            </form>
+            <ul id="imena">
+                <li>Ime i prezime | Index</li>
+                <li>Neko Nekić   | 12345</li>
+                <li>Neko Nekić   | 12345</li>
+                <li>Neko Nekić   | 12345</li>
+                <li>Neko Nekić   | 12345</li>
+            </ul>
+        </div>
+        <div class="polovina">
+            <h3>Vježbe</h3>
+            <ul class="folder light">
+                <li class="item">Vježba 1</li>
+                <li class="item">Vježba 2</li>
+                <li class="item">Vježba 3</li>
+                <li class="item">Vježba 4</li>
+                <li class="item">Vježba 5</li>
+                <li class="item">Vježba 6</li>
+            </ul>
+            <h3>Spirale</h3>
+            <ul class="folder light">
+                <li class="item">Spirala 1</li>
+                <li class="item">Spirala 2</li>
+                <li class="item">Spirala 3</li>
+                <li class="item">Spirala 4</li>
+            </ul>
+        </div>
+    </div>
+    <div id="footer" class="light">
+        <p>Web tehnologije 2018/2019</p>
+    </div>
+    <script src="validacija.js"></script>
+    <script src="zadaci.js"></script>
+</body>
+</html>

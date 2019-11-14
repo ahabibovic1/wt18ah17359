@@ -1,0 +1,112 @@
+* {
+    font-family: 'Segoe UI';
+    color: #17252a;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+.light *{
+    color: #def2f1;
+}
+/*HEADER FOOTER*/
+#header, #footer {
+    background-color: #3aafa9;
+    padding: 10px;
+}
+/*MENI*/
+#logo {
+    width: 4em; /*4 puta font*/
+    height: 4em;
+}
+#meni {
+    list-style-type: none;
+}
+#meni li{
+    display: inline;
+}
+#meni a {
+    padding: 5px 10px;
+    text-decoration: none;
+}
+#meni a:hover {
+    background-color:#2b7a78;
+}
+/*SIDE*/
+#side {
+    width: 35%;
+    height: 100vh;
+    overflow: auto;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #def2f1;
+    padding: 10px;
+}
+#buttoni {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+}
+#omotac {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h3{
+    padding: 10px;
+    text-align: center;
+}
+label {
+    padding: 10px;
+    align-self: flex-start;
+}
+input {
+    margin: 10px;
+    margin-right: 0;
+    width: 100%;
+}
+input[type="submit"], input[type="reset"] {
+    margin: 10px;
+    width: fit-content;
+    padding: 0 5%;
+    align-self: center;
+}
+/*GLAVNI SADRZAJ*/
+#divSadrzaj {
+    width: 65%;
+    height: 100vh;
+    overflow: auto;
+    float: right;
+    background-color:#feffff;
+    display: flex;
+    flex-wrap: wrap;
+}
+.godina {
+    background-color:#2b7a78;
+    margin: 10px;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+}
+/*MEDIA QUERIES*/
+@media (min-width: 600px) { /*preko 600px*/
+    #naziv {
+        position: absolute;
+        top: 0.67em;
+        right: 0.67em;
+        float: right;
+    }
+}
+@media (max-width: 600px) { /* do 600px */
+    #divSadrzaj  {
+        float: none;
+        width: 100%;
+        height: auto;
+    } 
+    #side {
+        float: none;
+        width: 100%;
+        height: auto;
+    }
+ }

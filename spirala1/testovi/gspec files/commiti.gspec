@@ -1,0 +1,22 @@
+@objects
+    header  id  header
+    footer  id  footer
+    logo    id  logo
+    meni    id  meni
+    naziv   id  naziv
+    commiti id  commiti
+= Header section =
+    header:
+        inside screen ~ 0 px top
+    naziv:
+        inside header ~ 20 px top right
+    logo, meni, naziv:
+        inside header
+    logo:
+        inside header ~ 10 px top left
+= Main section =
+    commiti:
+        inside screen
+= Footer section =
+    footer:
+        inside screen ~ 0 px bottom

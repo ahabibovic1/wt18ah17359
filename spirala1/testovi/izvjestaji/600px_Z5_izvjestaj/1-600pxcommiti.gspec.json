@@ -1,0 +1,215 @@
+{
+  "testId" : "1-600pxcommiti.gspec",
+  "name" : "600pxcommiti.gspec",
+  "report" : {
+    "nodes" : [ {
+      "name" : "Simple check",
+      "status" : "info",
+      "nodes" : [ {
+        "name" : "check  600pxcommiti.gspec --url http://localhost/commiti.html --size 500x768 --htmlreport 600px_Z5_izvjestaj",
+        "status" : "info",
+        "nodes" : [ {
+          "name" : "Check layout: 600pxcommiti.gspec included tags: ",
+          "status" : "info",
+          "time" : 1541469390734,
+          "sections" : [ {
+            "name" : "Header section",
+            "place" : {
+              "filePath" : "600pxcommiti.gspec",
+              "lineNumber" : 8
+            },
+            "objects" : [ {
+              "name" : "header",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "600pxcommiti.gspec",
+                  "lineNumber" : 10
+                },
+                "name" : "inside screen ~ 0 px top",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "header",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "screen",
+                    "edge" : "top"
+                  },
+                  "expectedDistance" : "-2 to 2px",
+                  "realDistance" : "0px"
+                } ],
+                "highlight" : [ "header", "screen" ]
+              } ]
+            }, {
+              "name" : "logo",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "600pxcommiti.gspec",
+                  "lineNumber" : 12
+                },
+                "name" : "inside header",
+                "meta" : [ ],
+                "highlight" : [ "logo", "header" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "600pxcommiti.gspec",
+                  "lineNumber" : 16
+                },
+                "name" : "inside header ~ 10 px top left",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "logo",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "header",
+                    "edge" : "top"
+                  },
+                  "expectedDistance" : "8 to 12px",
+                  "realDistance" : "10px"
+                }, {
+                  "from" : {
+                    "object" : "logo",
+                    "edge" : "left"
+                  },
+                  "to" : {
+                    "object" : "header",
+                    "edge" : "left"
+                  },
+                  "expectedDistance" : "8 to 12px",
+                  "realDistance" : "10px"
+                } ],
+                "highlight" : [ "logo", "header" ]
+              } ]
+            }, {
+              "name" : "meni",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "600pxcommiti.gspec",
+                  "lineNumber" : 12
+                },
+                "name" : "inside header",
+                "meta" : [ ],
+                "highlight" : [ "meni", "header" ]
+              } ]
+            }, {
+              "name" : "naziv",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "600pxcommiti.gspec",
+                  "lineNumber" : 12
+                },
+                "name" : "inside header",
+                "meta" : [ ],
+                "highlight" : [ "naziv", "header" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "600pxcommiti.gspec",
+                  "lineNumber" : 14
+                },
+                "name" : "below meni ~ 0 px",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "naziv",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "meni",
+                    "edge" : "bottom"
+                  },
+                  "expectedDistance" : "-2 to 2px",
+                  "realDistance" : "-1px"
+                } ],
+                "highlight" : [ "naziv", "meni" ]
+              } ]
+            } ]
+          }, {
+            "name" : "Main section",
+            "place" : {
+              "filePath" : "600pxcommiti.gspec",
+              "lineNumber" : 17
+            },
+            "objects" : [ {
+              "name" : "commiti",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "600pxcommiti.gspec",
+                  "lineNumber" : 19
+                },
+                "name" : "inside screen",
+                "meta" : [ ],
+                "highlight" : [ "commiti", "screen" ]
+              } ]
+            } ]
+          }, {
+            "name" : "Footer section",
+            "place" : {
+              "filePath" : "600pxcommiti.gspec",
+              "lineNumber" : 20
+            },
+            "objects" : [ {
+              "name" : "footer",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "600pxcommiti.gspec",
+                  "lineNumber" : 22
+                },
+                "name" : "inside screen ~ 0 px bottom",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "footer",
+                    "edge" : "bottom"
+                  },
+                  "to" : {
+                    "object" : "screen",
+                    "edge" : "bottom"
+                  },
+                  "expectedDistance" : "-2 to 2px",
+                  "realDistance" : "1px"
+                } ],
+                "highlight" : [ "footer", "screen" ]
+              } ]
+            } ]
+          } ],
+          "objects" : {
+            "meni" : {
+              "area" : [ 10, 78, 450, 65 ]
+            },
+            "footer" : {
+              "area" : [ 0, 887, 470, 42 ]
+            },
+            "commiti" : {
+              "area" : [ 10, 310, 364, 334 ]
+            },
+            "naziv" : {
+              "area" : [ 10, 142, 450, 42 ]
+            },
+            "header" : {
+              "area" : [ 0, 0, 470, 195 ]
+            },
+            "screen" : {
+              "area" : [ 0, 0, 470, 930 ]
+            },
+            "logo" : {
+              "area" : [ 10, 10, 64, 64 ]
+            }
+          },
+          "screenshot" : "layout-1-screenshot.png",
+          "type" : "layout"
+        } ],
+        "time" : 1541469389612,
+        "type" : "node"
+      } ],
+      "time" : 1541469381746,
+      "type" : "node"
+    } ]
+  }
+}

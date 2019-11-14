@@ -1,0 +1,17 @@
+{
+  "tests" : [ {
+    "name" : "600pxaddGodina.gspec",
+    "startedAt" : 1541469547546,
+    "endedAt" : 1541469554356,
+    "failed" : false,
+    "statistic" : {
+      "passed" : 11,
+      "errors" : 0,
+      "warnings" : 0,
+      "total" : 11
+    },
+    "testId" : "1-600pxaddgodina.gspec",
+    "duration" : 6810,
+    "failed" : false
+  } ]
+}

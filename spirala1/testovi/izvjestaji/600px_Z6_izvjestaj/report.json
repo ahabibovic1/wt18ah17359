@@ -1,0 +1,17 @@
+{
+  "tests" : [ {
+    "name" : "600pxaddVjezba.gspec",
+    "startedAt" : 1541469458782,
+    "endedAt" : 1541469468789,
+    "failed" : false,
+    "statistic" : {
+      "passed" : 12,
+      "errors" : 0,
+      "warnings" : 0,
+      "total" : 12
+    },
+    "testId" : "1-600pxaddvjezba.gspec",
+    "duration" : 10007,
+    "failed" : false
+  } ]
+}

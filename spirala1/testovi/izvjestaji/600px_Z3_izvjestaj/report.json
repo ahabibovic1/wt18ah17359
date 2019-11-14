@@ -1,0 +1,17 @@
+{
+  "tests" : [ {
+    "name" : "600pxzadaci.gspec",
+    "startedAt" : 1541469354073,
+    "endedAt" : 1541469363653,
+    "failed" : false,
+    "statistic" : {
+      "passed" : 16,
+      "errors" : 0,
+      "warnings" : 0,
+      "total" : 16
+    },
+    "testId" : "1-600pxzadaci.gspec",
+    "duration" : 9580,
+    "failed" : false
+  } ]
+}

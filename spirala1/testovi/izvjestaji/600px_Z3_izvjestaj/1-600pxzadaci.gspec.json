@@ -1,0 +1,389 @@
+{
+  "testId" : "1-600pxzadaci.gspec",
+  "name" : "600pxzadaci.gspec",
+  "report" : {
+    "nodes" : [ {
+      "name" : "Simple check",
+      "status" : "info",
+      "nodes" : [ {
+        "name" : "check  600pxzadaci.gspec --url http://localhost/zadaci.html --size 500x768 --htmlreport 600px_Z3_izvjestaj",
+        "status" : "info",
+        "nodes" : [ {
+          "name" : "Check layout: 600pxzadaci.gspec included tags: ",
+          "status" : "info",
+          "time" : 1541469363042,
+          "sections" : [ {
+            "name" : "Header section",
+            "place" : {
+              "filePath" : "600pxzadaci.gspec",
+              "lineNumber" : 15
+            },
+            "objects" : [ {
+              "name" : "header",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "600pxzadaci.gspec",
+                  "lineNumber" : 17
+                },
+                "name" : "inside screen ~ 0 px top",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "header",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "screen",
+                    "edge" : "top"
+                  },
+                  "expectedDistance" : "-2 to 2px",
+                  "realDistance" : "0px"
+                } ],
+                "highlight" : [ "header", "screen" ]
+              } ]
+            }, {
+              "name" : "naziv",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "600pxzadaci.gspec",
+                  "lineNumber" : 19
+                },
+                "name" : "below meni ~ 0 px",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "naziv",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "meni",
+                    "edge" : "bottom"
+                  },
+                  "expectedDistance" : "-2 to 2px",
+                  "realDistance" : "-1px"
+                } ],
+                "highlight" : [ "naziv", "meni" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "600pxzadaci.gspec",
+                  "lineNumber" : 21
+                },
+                "name" : "inside header",
+                "meta" : [ ],
+                "highlight" : [ "naziv", "header" ]
+              } ]
+            }, {
+              "name" : "logo",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "600pxzadaci.gspec",
+                  "lineNumber" : 21
+                },
+                "name" : "inside header",
+                "meta" : [ ],
+                "highlight" : [ "logo", "header" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "600pxzadaci.gspec",
+                  "lineNumber" : 23
+                },
+                "name" : "inside header ~ 10 px top left",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "logo",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "header",
+                    "edge" : "top"
+                  },
+                  "expectedDistance" : "8 to 12px",
+                  "realDistance" : "10px"
+                }, {
+                  "from" : {
+                    "object" : "logo",
+                    "edge" : "left"
+                  },
+                  "to" : {
+                    "object" : "header",
+                    "edge" : "left"
+                  },
+                  "expectedDistance" : "8 to 12px",
+                  "realDistance" : "10px"
+                } ],
+                "highlight" : [ "logo", "header" ]
+              } ]
+            }, {
+              "name" : "meni",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "600pxzadaci.gspec",
+                  "lineNumber" : 21
+                },
+                "name" : "inside header",
+                "meta" : [ ],
+                "highlight" : [ "meni", "header" ]
+              } ]
+            } ]
+          }, {
+            "name" : "Main section",
+            "place" : {
+              "filePath" : "600pxzadaci.gspec",
+              "lineNumber" : 24
+            },
+            "objects" : [ {
+              "name" : "search",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "600pxzadaci.gspec",
+                  "lineNumber" : 26
+                },
+                "name" : "inside druga",
+                "meta" : [ ],
+                "highlight" : [ "search", "druga" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "600pxzadaci.gspec",
+                  "lineNumber" : 27
+                },
+                "name" : "above imena",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "search",
+                    "edge" : "bottom"
+                  },
+                  "to" : {
+                    "object" : "imena",
+                    "edge" : "top"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "58px"
+                } ],
+                "highlight" : [ "search", "imena" ]
+              } ]
+            }, {
+              "name" : "name",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "600pxzadaci.gspec",
+                  "lineNumber" : 26
+                },
+                "name" : "inside druga",
+                "meta" : [ ],
+                "highlight" : [ "name", "druga" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "600pxzadaci.gspec",
+                  "lineNumber" : 27
+                },
+                "name" : "above imena",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "name",
+                    "edge" : "bottom"
+                  },
+                  "to" : {
+                    "object" : "imena",
+                    "edge" : "top"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "108px"
+                } ],
+                "highlight" : [ "name", "imena" ]
+              } ]
+            }, {
+              "name" : "godina",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "600pxzadaci.gspec",
+                  "lineNumber" : 29
+                },
+                "name" : "inside cetvrtina",
+                "meta" : [ ],
+                "highlight" : [ "godina", "cetvrtina" ]
+              } ]
+            }, {
+              "name" : "prva",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "600pxzadaci.gspec",
+                  "lineNumber" : 31
+                },
+                "name" : "above druga ~ 0 px",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "prva",
+                    "edge" : "bottom"
+                  },
+                  "to" : {
+                    "object" : "druga",
+                    "edge" : "top"
+                  },
+                  "expectedDistance" : "-2 to 2px",
+                  "realDistance" : "0px"
+                } ],
+                "highlight" : [ "prva", "druga" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "600pxzadaci.gspec",
+                  "lineNumber" : 32
+                },
+                "name" : "below header",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "prva",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "header",
+                    "edge" : "bottom"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "0px"
+                } ],
+                "highlight" : [ "prva", "header" ]
+              } ]
+            }, {
+              "name" : "druga",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "600pxzadaci.gspec",
+                  "lineNumber" : 34
+                },
+                "name" : "above polovina",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "druga",
+                    "edge" : "bottom"
+                  },
+                  "to" : {
+                    "object" : "polovina",
+                    "edge" : "top"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "0px"
+                } ],
+                "highlight" : [ "druga", "polovina" ]
+              } ]
+            }, {
+              "name" : "polovina",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "600pxzadaci.gspec",
+                  "lineNumber" : 36
+                },
+                "name" : "above footer",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "polovina",
+                    "edge" : "bottom"
+                  },
+                  "to" : {
+                    "object" : "footer",
+                    "edge" : "top"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "0px"
+                } ],
+                "highlight" : [ "polovina", "footer" ]
+              } ]
+            } ]
+          }, {
+            "name" : "Footer section",
+            "place" : {
+              "filePath" : "600pxzadaci.gspec",
+              "lineNumber" : 37
+            },
+            "objects" : [ {
+              "name" : "footer",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "600pxzadaci.gspec",
+                  "lineNumber" : 39
+                },
+                "name" : "inside screen ~ 0 px bottom",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "footer",
+                    "edge" : "bottom"
+                  },
+                  "to" : {
+                    "object" : "screen",
+                    "edge" : "bottom"
+                  },
+                  "expectedDistance" : "-2 to 2px",
+                  "realDistance" : "0px"
+                } ],
+                "highlight" : [ "footer", "screen" ]
+              } ]
+            } ]
+          } ],
+          "objects" : {
+            "meni" : {
+              "area" : [ 10, 78, 450, 65 ]
+            },
+            "footer" : {
+              "area" : [ 0, 1260, 470, 42 ]
+            },
+            "naziv" : {
+              "area" : [ 10, 142, 450, 42 ]
+            },
+            "screen" : {
+              "area" : [ 0, 0, 470, 1302 ]
+            },
+            "imena" : {
+              "area" : [ 47, 699, 376, 160 ]
+            },
+            "godina" : {
+              "area" : [ 47, 292, 376, 160 ]
+            },
+            "cetvrtina" : {
+              "area" : [ 0, 195, 470, 304 ]
+            },
+            "search" : {
+              "area" : [ 203, 610, 63, 31 ]
+            },
+            "druga" : {
+              "area" : [ 0, 499, 470, 407 ]
+            },
+            "name" : {
+              "area" : [ 117, 559, 235, 32 ]
+            },
+            "header" : {
+              "area" : [ 0, 0, 470, 195 ]
+            },
+            "logo" : {
+              "area" : [ 10, 10, 64, 64 ]
+            },
+            "prva" : {
+              "area" : [ 0, 195, 470, 304 ]
+            },
+            "polovina" : {
+              "area" : [ 0, 906, 470, 354 ]
+            }
+          },
+          "screenshot" : "layout-1-screenshot.png",
+          "type" : "layout"
+        } ],
+        "time" : 1541469361554,
+        "type" : "node"
+      } ],
+      "time" : 1541469354076,
+      "type" : "node"
+    } ]
+  }
+}
